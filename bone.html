@@ -6,9 +6,10 @@
     <!-- If IE use the latest rendering engine -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Set the page to the width of the device and set the zoon level -->
+    <!-- Set the page to the width of the device and set the zoom level to 1-->
     <meta name="viewport" content="width = device-width, initial-scale = 1">
     <title>Bootstrap Tutorial</title>
+    <!-- cdn -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <style>
@@ -35,7 +36,7 @@
 <!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
 <div class="container">
 
-    <!-- page-header adds space aroundtext and enlarges it. It also adds an underline at the end -->
+    <!-- page-header adds space around text and enlarges it. It also adds an underline at the end -->
     <div class="page-header">
         <h1>Bootstrap Tutorial</h1>
     </div>
@@ -47,26 +48,29 @@
         <!-- BUTTONS -->
         <!-- There are many built in button colors and sizes. If a link is to trigger in page functionality it should use role="button". The button element should be used in most situations -->
         <p>
+            <!--- Role helps screen reader is good practice -->
             <a href="#" class = "btn btn-default btn-lg" role="button">More info</a>
-            <button type="submit" class = "btn btn-danger" role = "button">Button</button>
+            <button type="submit" class = "btn btn-danger" role = "button">Button Danger</button>
             <input type="button" value="Info" class = "btn btn-info">
+            <!-- using button-small instead of default button-->
             <button type="submit" class = "btn-primary btn-sm">Primary</button>
             <button type="submit" class = "btn btn-success btn-xs">Success</button>
             <button type="submit" class = "btn btn-warning btn-lg">Warning</button>
             <button type="submit" class = "btn btn-link btn-lg">Link</button>
 
             <!-- You can disable buttons with disabled -->
-            <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary</button>
+            <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Disabled Primary</button>
 
             <!-- You disable links in a similar way -->
             <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
 
             <!-- You can group buttons. You can size the buttons with btn-group-lg, btn-group-sm, or btn-group-xs -->
-        <div class="btn-group btn-group-lg" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">Small</button>
-            <button type="button" class="btn btn-default">Medium</button>
-            <button type="button" class="btn btn-default">Large</button>
-        </div>
+            <!-- They act like radio group. You can only select one and all the three will be connected -->
+            <div class="btn-group btn-group-lg" role="group" aria-label="Assistive technology">
+                <button type="button" class="btn btn-default">Small</button>
+                <button type="button" class="btn btn-default">Medium</button>
+                <button type="button" class="btn btn-default">Large</button>
+            </div>
 
         </p>
 
@@ -512,7 +516,7 @@
     <button type="button" class="list-group-item">Check for Mail</button>
 
 </div>
-
+<!-- cdn -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
