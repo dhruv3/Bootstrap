@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the page to the width of the device and set the zoom level to 1-->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Bootstrap Tutorial</title>
+    <!-- cdn -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="PortfolioPageCSS.css">
+    <style>
+    </style>
+
+</head>
+<body>
+<!-- Collapsible Navigation Bar -->
+<div class="container">
+
+    <!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
+    <nav class="navbar navbar-default">
+        <!--fluid makes it occupy the entire container-->
+        <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+                <!-- Button that toggles the navbar on and off on small screens -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+                    <!-- Hides information from screen readers -->
+                    <span class="sr-only"></span>
+
+                    <!-- Draws 3 bars in navbar button when in small mode -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
+                <a class="pull-left" href="#">
+                    <span style="top:20px; right: 50%;" class="glyphicon glyphicon-asterisk"></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">My Portfolio</a></li>
+                </ul>
+                <!-- navbar-left will move the search to the left -->
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search Stock">
+                    </div>
+                    <button type="submit" class="btn btn-default">Find</button>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<br>
+<div class="container stockSelection">
+    <div id="portfolioDD" class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select Stock
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#" data-value="Yahoo">Yahoo</a></li>
+            <li><a href="#" data-value="Microsoft">Microsoft</a></li>
+            <li><a href="#" data-value="Amazon">Amazon</a></li>
+            <li><a href="#" data-value="Google">Google</a></li>
+        </ul>
+    </div>
+    <span>
+        <form class="navbar-form" role="search">
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">Quantity</span>
+                <input type="text" class="form-control" id="" />
+            </div>
+            <button type="submit" class="btn btn-group-lg">Add</button>
+        </form>
+    </span>
+</div>
+<br/>
+<div class="container" id="currentStock">
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border">My Stocks</legend>
+        <div class="control-group">
+
+        </div>
+    </fieldset>
+</div>
+<!-- cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="PortfolioPageJS.js"></script>
+</body>
+</html>
