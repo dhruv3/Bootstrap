@@ -1,0 +1,14 @@
+#chartdiv {
+    width	: 100%;
+    height	: 500px;
+}
+
+/*
+following check was required to override box-sizing introduced by Bootstrap
+http://stackoverflow.com/questions/34790054/css-disable-bootstrap-box-sizing
+*/
+.amChartsCompareList .amcharts-compare-item-div{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
