@@ -12091,7 +12091,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
     "type": "stock",
     "theme": "light",
     "dataSets": [ {
-        "title": "first data set",
+        "title": "Amazon",
         "fieldMappings": [ {
             "fromField": "value",
             "toField": "value"
@@ -12099,7 +12099,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
         "dataProvider": chartData1,
         "categoryField": "date"
     }, {
-        "title": "second data set",
+        "title": "Apple",
         "fieldMappings": [ {
             "fromField": "value",
             "toField": "value"
@@ -12107,7 +12107,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
         "dataProvider": chartData2,
         "categoryField": "date"
     }, {
-        "title": "third data set",
+        "title": "Microsoft",
         "fieldMappings": [ {
             "fromField": "value",
             "toField": "value"
@@ -12115,7 +12115,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
         "dataProvider": chartData3,
         "categoryField": "date"
     }, {
-        "title": "fourth data set",
+        "title": "HP",
         "fieldMappings": [ {
             "fromField": "value",
             "toField": "value"
